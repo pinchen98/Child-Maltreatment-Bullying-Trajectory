@@ -57,18 +57,18 @@ gen wave6 = 2
 * Peer aggression victimisation
 
 ** Slope: linear
-traj, multgroups(1) var1(rec_child_vic_s4 rec_child_vic_s5 rec_child_vic_s6) indep1(wave4-wave6) model1(cnorm) min1(-2) max1(6) order1(1) 
+traj, multgroups(1) var1(Victimisation_s4-Victimisation_s6) indep1(wave4-wave6) model1(cnorm) min1(-2) max1(6) order1(1) 
 
 ** Slope: quadratic
-traj, multgroups(1) var1(rec_child_vic_s4 rec_child_vic_s5 rec_child_vic_s6) indep1(wave4-wave6) model1(cnorm) min1(-2) max1(5) order1(2)
+traj, multgroups(1) var1(Victimisation_s4-Victimisation_s6) indep1(wave4-wave6) model1(cnorm) min1(-2) max1(5) order1(2)
 
 * Peer aggression perpetration
 
 ** Slope: linear
-traj, multgroups(1) var1(rec_child_per_s4 rec_child_per_s5 rec_child_per_s6) indep1(wave4-wave6) model1(cnorm) min1(-1) max1(11) order1(1)
+traj, multgroups(1) var1(Perpetration_s4-Perpetration_s6) indep1(wave4-wave6) model1(cnorm) min1(-1) max1(11) order1(1)
 
 ** Slope: quadratic
-traj, multgroups(1) var1(rec_child_per_s4 rec_child_per_s5 rec_child_per_s6) indep1(wave4-wave6) model1(cnorm) min1(-1) max1(11) order1(2)
+traj, multgroups(1) var1(Perpetration_s4-Perpetration_s6) indep1(wave4-wave6) model1(cnorm) min1(-1) max1(11) order1(2)
 
 * Plot model
 
@@ -224,7 +224,7 @@ summary_table_procTraj
 
 ** Slope L: Victimisation G1, G2, G3, G4, G5, G6
 ** Slope Q: Perpetration G1, G2, G3, G4, G5, G6
-traj, multgroups(6) var(rec_parent_vic_s4 rec_parent_vic_s5 rec_parent_vic_s6) indep1(wave4-wave6) model1(cnorm) order(1 1 1 1 1 1) min1(-2) max1(6) var2(rec_parent_per_s4 rec_parent_per_s5 rec_parent_per_s6) indep2(wave4-wave6) model2(cnorm) min2(-1) max2(11) order2(2 2 2 2 2 2)
+traj, multgroups(6) var(Victimisation_s4-Victimisation_s6) indep1(wave4-wave6) model1(cnorm) order(1 1 1 1 1 1) min1(-2) max1(6) var2(Perpetration_s4-Perpetration_s6) indep2(wave4-wave6) model2(cnorm) min2(-1) max2(11) order2(2 2 2 2 2 2)
 summary_table_procTraj
 
 ** Slope L: none
@@ -257,7 +257,7 @@ summary_table_procTraj
 ** Slope L: none
 ** Slope Q: Victimisation G1, G2, G3, G4, G5, G6, G7; Perpetration G1, G2, G3, G4, G5, G6, G7
 ****** Fit decrease with APP and OCC both met
-traj, multgroups(7) var(rec_child_vic_s4 rec_child_vic_s5 rec_child_vic_s6) indep1(wave4-wave6) model1(cnorm) order(2 2 2 2 2 2 2) min1(-2) max1(6) var2(rec_child_per_s4 rec_child_per_s5 rec_child_per_s6) indep2(wave4-wave6) model2(cnorm) min2(-1) max2(11) order2(2 2 2 2 2 2 2)
+traj, multgroups(7) var(Victimisation_s4-Victimisation_s6) indep1(wave4-wave6) model1(cnorm) order(2 2 2 2 2 2 2) min1(-2) max1(6) var2(Perpetration_s4-Perpetration_s6) indep2(wave4-wave6) model2(cnorm) min2(-1) max2(11) order2(2 2 2 2 2 2 2)
 summary_table_procTraj
 
 * Plot model
